@@ -1,11 +1,10 @@
--OK-    Kern.Rezeption      修改左侧主导航菜单，使得在各页面的子页面中仍然可以高亮。
+-OK-    Kern.Rezeption  |   修改左侧主导航菜单，使得在各页面的子页面中仍然可以高亮。
 open    Kern.Rezeption      在消息队列-尚未加密中，添加“撰写”的快捷按钮。
 open    Kern.Datenbank      增加CRUD的功能，即在gen函数和一种输出数据时的函数中，允许加密。
                             加密的密钥来自数据库本身（自产生时产生的密钥）。
--OK-    Kern.Datenbank      添加由明文输入任务时的注释功能。这一注释应当保留至加密后，发送
-        Kern.Rezeption      前。可以自动生成摘要，或者允许人工输入。
-
+-OK-    Kern.Datenbank  |   添加由明文输入任务时的注释功能。这一注释应当保留至加密后，发送
+        Kern.Rezeption  |   前。可以自动生成摘要，或者允许人工输入。
 open    kern.Rezeption      添加“口令发送”时对输入的密码的检验。添加包含口令提示。
-open    kern.Rezeption      添加“添加新联系人”的功能
-open    Kern.Rezeption      利用child_process模块（需要增加给Baum），来启动和停止一个服务。
+-OK-    kern.Rezeption  |   添加“添加新联系人”的功能
+open    Kern.Rezeption  |   利用child_process模块（需要增加给Baum），来启动和停止一个服务。
         Util.Baum           停止服务应该先从服务程序那里取得pid。启动服务不需要。
