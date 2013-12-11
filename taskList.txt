@@ -6,3 +6,4 @@ open    Kern.Datenbank      增加CRUD的功能，即在gen函数和一种输出
         Kern.Rezeption      前。可以自动生成摘要，或者允许人工输入。
 
 open    kern.Rezeption      添加“口令发送”时对输入的密码的检验。添加包含口令提示。
+open    kern.Rezeption      添加“添加新联系人”的功能
