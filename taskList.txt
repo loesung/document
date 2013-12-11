@@ -7,3 +7,5 @@ open    Kern.Datenbank      增加CRUD的功能，即在gen函数和一种输出
 
 open    kern.Rezeption      添加“口令发送”时对输入的密码的检验。添加包含口令提示。
 open    kern.Rezeption      添加“添加新联系人”的功能
+open    Kern.Rezeption      利用child_process模块（需要增加给Baum），来启动和停止一个服务。
+        Util.Baum           停止服务应该先从服务程序那里取得pid。启动服务不需要。
