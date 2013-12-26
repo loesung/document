@@ -1,7 +1,7 @@
 -OK-    Kern.Rezeption  |   修改左侧主导航菜单，使得在各页面的子页面中仍然可以高亮。
 -OK-    Kern.Rezeption  |   在消息队列-尚未加密中，添加“撰写”的快捷按钮。
-open    Kern.Datenbank      增加CRUD的功能，即在gen函数和一种输出数据时的函数中，允许加密。
-                            加密的密钥来自数据库本身（自产生时产生的密钥）。
+closed  Kern.Datenbank  :   增加CRUD的功能，即在gen函数和一种输出数据时的函数中，允许加密。
+                        :   加密的密钥来自数据库本身（自产生时产生的密钥）。
 -OK-    Kern.Datenbank  |   添加由明文输入任务时的注释功能。这一注释应当保留至加密后，发送
         Kern.Rezeption  |   前。可以自动生成摘要，或者允许人工输入。
 open    kern.Rezeption      添加“口令发送”时对输入的密码的检验。添加包含口令提示。
@@ -13,7 +13,8 @@ open    Kern.Rezeption      显示各类消息队列时，要转义显示的消�
 open    Kern.Geheimd..  |   使用独立的JSON文件读取/写入程序代替对Datenbank的访问。
                         |   在config中确定这个存储/用户文件的位置
                             将和身份、密码本和私钥等有关的操作全部移至Geheimdienst系统。
-                            在Rezeption中放弃为了列出、管理身份/密码本/私钥等操作而直接对
+                        |   在Rezeption中放弃为了列出、管理身份/密码本/私钥等操作而直接对
                             数据库或数据存储的操作。
-open    Kern.Geheimd..      增加对JSON访问模块的密码校验。密码校验不通过禁止访问，以免造成
-                            数据损失。
+-OK-    Kern.Geheimd..  |   增加对JSON访问模块的密码校验。密码校验不通过禁止访问，以免造成
+                        |   数据损失。
+open    Kern.Rezeption      增加通过密码启动一个Geheimdienst进程的功能。
