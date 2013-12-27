@@ -17,6 +17,8 @@ open    Kern.Geheimd..  |   使用独立的JSON文件读取/写入程序代替�
                             数据库或数据存储的操作。
 -OK-    Kern.Geheimd..  |   增加对JSON访问模块的密码校验。密码校验不通过禁止访问，以免造成
                         |   数据损失。
-open    Kern.Rezeption      增加通过密码启动一个Geheimdienst进程的功能。
+closed  Kern.Rezeption  :   增加通过密码启动一个Geheimdienst进程的功能。
 open    Kern.Rezeption  |   修改路由结构，使用$.net.urlRouter代替原有路由，并修改文件目录
                             和内部传递数据的结构。
+open    Kern.Rezeption      增加在访问Geheimdienst时出现密码错误或者未输入密码时的提示并要求
+                            输入密码。
