@@ -10,11 +10,11 @@ open    Kern.Rezeption  |   利用child_process模块（需要增加给Baum）�
         Util.Baum           停止服务应该先从服务程序那里取得pid。启动服务不需要。
 open    Kern.Rezeption      显示各类消息队列时，要转义显示的消息，并截取长度。
 -OK-    Kern.Rezeption  |   增加根据URL用GET发送多个加密后的密文的能力。以便连接发送。
-open    Kern.Geheimd..  |   使用独立的JSON文件读取/写入程序代替对Datenbank的访问。
+-OK-    Kern.Geheimd..  |   使用独立的JSON文件读取/写入程序代替对Datenbank的访问。
                         |   在config中确定这个存储/用户文件的位置
-                            将和身份、密码本和私钥等有关的操作全部移至Geheimdienst系统。
+                        |   将和身份、密码本和私钥等有关的操作全部移至Geheimdienst系统。
                         |   在Rezeption中放弃为了列出、管理身份/密码本/私钥等操作而直接对
-                            数据库或数据存储的操作。
+                        |   数据库或数据存储的操作。
 -OK-    Kern.Geheimd..  |   增加对JSON访问模块的密码校验。密码校验不通过禁止访问，以免造成
                         |   数据损失。
 closed  Kern.Rezeption  :   增加通过密码启动一个Geheimdienst进程的功能。
