@@ -1,0 +1,92 @@
+All these commands are organized in a tree structure. The root is here named
+as `cryptography`.
+
+# Encrypt And Sign commands
+
+## Encryption without Sign
+
+    cryptography.encrypt.withPassphrase
+        = function(ArrayOrString passphrase, message, options)
+
+    cryptography.encrypt.withCodebook
+        = function(ArrayOrString codebookID, message, options)
+
+    cryptography.encrypt.withIdentity
+        = function(ArrayOrString identityID, message, options)
+
+## Sign only
+
+    cryptography.sign
+        = function(ArrayOrString identityID, message, options)
+
+## Encrypt and sign
+
+    cryptography.encryptAndSign.withPassphrase
+        = function(
+            ArrayOrString passphrase,
+            message,
+            ArrayOrString identityID,
+            options
+        )
+
+    cryptography.encryptAndSign.withCodebook
+        = function(
+            ArrayOrString codebookID,
+            message,
+            ArrayOrString identityID,
+            options
+        )
+
+    cryptography.encryptAndSign.withIdentity
+        = function(
+            ArrayOrString identityID,
+            message,
+            ArrayOrString identityID,
+            options
+        )
+
+# Decrypt And Verify commands
+
+    cryptography.decrypt.examine
+        = function(message)
+
+    cryptography.decrypt.do
+        = function(message, options)
+
+# Codebook management
+
+    cryptography.codebook.list
+        = function(ArrayOrString codebookHint)
+
+
+    cryptography.codebook.add.letter.create
+        = function(String partnerIdentityID, String identityID, options)
+
+    cryptography.codebook.add.letter.examine
+        = function(String request)
+
+    cryptography.codebook.add.letter.accept
+        = function(String request)
+
+    cryptography.codebook.add.letter.import
+        = function(String response)
+
+    cryptography.codebook.add.sharedsecret
+        = function(String partnerIdentityID, String sharedsecret, options)
+
+
+    cryptography.codebook.delete
+        = function(ArrayOrString codebookID)
+
+    cryptography.codebook.cancel
+        = function(ArrayOrString codebookID)
+
+# Identity management
+
+    cryptography.identity.list
+        = function(ArrayOrString identityHint)
+
+    cryptography.identity.create
+        = function(identification, passphrase)
+
+
