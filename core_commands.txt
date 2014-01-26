@@ -5,7 +5,7 @@ as `cryptography`.
 
 ## Encryption without Sign
 
-    cryptography.encrypt.withPassphrase
+    cryptography.encrypt.withPassphrases
         = function(ArrayOrString passphrase, message, options)
 
     cryptography.encrypt.withCodebook
@@ -89,4 +89,7 @@ as `cryptography`.
     cryptography.identity.create
         = function(identification, passphrase)
 
+# PKI management
 
+    cryptography.pki.key.create(identityID, algorithm)
+    cryptography.pki.key.import(key)
