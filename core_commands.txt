@@ -6,7 +6,7 @@ as `cryptography`.
 ## Encryption without Sign
 
     cryptography.encrypt.withPassphrases
-        = function(ArrayOrString passphrase, message, options)
+        = function(ArrayOrString passphrase, message, options)                  DONE
 
     cryptography.encrypt.withCodebook
         = function(ArrayOrString codebookID, message, options)
@@ -74,7 +74,6 @@ as `cryptography`.
     cryptography.codebook.add.sharedsecret
         = function(String partnerIdentityID, String sharedsecret, options)
 
-
     cryptography.codebook.delete
         = function(ArrayOrString codebookID)
 
@@ -83,10 +82,10 @@ as `cryptography`.
 
 # Identity management
 
-    cryptography.identity.list
+    cryptography.identity.list                                                  DONE
         = function(ArrayOrString identityHint)
 
-    cryptography.identity.create
+    cryptography.identity.add                                                   DONE
         = function(identification, passphrase)
 
 # PKI management
