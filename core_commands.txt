@@ -8,7 +8,7 @@ as `cryptography`.
     cryptography.encrypt.withPassphrases
         = function(ArrayOrString passphrase, message, options)                  DONE
 
-    cryptography.encrypt.withCodebook
+    cryptography.encrypt.withCodebook                                           DONE
         = function(ArrayOrString codebookID, message, options)
 
     cryptography.encrypt.withIdentity
@@ -21,7 +21,7 @@ as `cryptography`.
 
 ## Encrypt and sign
 
-    cryptography.encryptAndSign.withPassphrase
+    cryptography.encryptAndSign.withPassphrases
         = function(
             ArrayOrString passphrase,
             message,
@@ -29,15 +29,15 @@ as `cryptography`.
             options
         )
 
-    cryptography.encryptAndSign.withCodebook
+    cryptography.encryptAndSign.withCodebooks
         = function(
-            ArrayOrString codebookID,
+            ArrayOrString identitiyIDs,
             message,
             ArrayOrString identityID,
             options
         )
 
-    cryptography.encryptAndSign.withIdentity
+    cryptography.encryptAndSign.withIdentities
         = function(
             ArrayOrString identityID,
             message,
@@ -55,7 +55,7 @@ as `cryptography`.
 
 # Codebook management
 
-    cryptography.codebook.list
+    cryptography.codebook.list                                                  DONE
         = function(ArrayOrString codebookHint)
 
 
@@ -71,8 +71,8 @@ as `cryptography`.
     cryptography.codebook.add.letter.import
         = function(String response)
 
-    cryptography.codebook.add.sharedsecret
-        = function(String partnerIdentityID, String sharedsecret, options)
+    cryptography.codebook.add.sharedsecret                                      DONE
+        = function(String memberIdentityIDs, String sharedsecret, options)
 
     cryptography.codebook.delete
         = function(ArrayOrString codebookID)
